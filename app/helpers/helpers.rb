@@ -1,5 +1,6 @@
 class Helpers
-  def self.current_user
+  def self.current_user(session)
+    session
   end
 
   def self.is_logged_in?
