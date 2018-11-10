@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
+    <% if Helpers.is_logged_in? %>
     <h3>Username: <%= @user.username %> Balance: <%= @user.balance %></h3>
     <p><a href="/logout">Log Out</a></p>
   </body>
 </html>
+
+is_logged_in? helper method to only display the username and account balance if the user is logged in.
