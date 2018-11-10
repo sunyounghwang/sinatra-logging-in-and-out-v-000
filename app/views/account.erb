@@ -10,7 +10,7 @@
       <h3>Username: <%= Helpers.current_user.username %> Balance: <%= Helpers.current_user.balance %></h3>
       <p><a href="/logout">Log Out</a></p>
     <% else %>
-      <a href="/">
+      <h1>You Must <a href="/">Log In</a> to View Your Balance</h1>
     <% end %>
   </body>
 </html>
