@@ -4,7 +4,6 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-    binding.pry
     !!session[:id]
   end
 end
